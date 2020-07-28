@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Margin="-14,-1,0,0">
+            <Button x:Name="Click_A" Content="A"  Height="26" Canvas.Left="545" Canvas.Top="265" Width="99" Click="Click_A_Click"/>
+            <Button x:Name="Click_B" Content="B"  Height="26" Canvas.Left="674" Canvas.Top="265" Width="100" Click="Click_B_Click"/>
+            <Button x:Name="Click_C" Content="C"  Height="26" Canvas.Left="545" Canvas.Top="333" Width="99" Click="Click_C_Click"/>
+            <Button x:Name="Click_D" Content="D"  Height="26" Canvas.Left="674" Canvas.Top="333" Width="100" Click="Click_D_Click"/>
+            <Label x:Name ="ilosc_a" Content="0" Canvas.Left="589" Canvas.Top="232"/>
+            <Label x:Name ="ilosc_b" Content="0" Canvas.Left="715" Canvas.Top="232"/>
+            <Label x:Name ="ilosc_c" Content="0" Canvas.Left="589" Canvas.Top="308" RenderTransformOrigin="2.881,0.551"/>
+            <Label x:Name ="ilosc_d" Content="0" Canvas.Left="715" Canvas.Top="308"/>
+            <Label Content="Całkowita ilość głosów :" Canvas.Left="545" Canvas.Top="204" Height="25"/>
+            <Label x:Name="l_all_vote" Content="0" Canvas.Left="686" Canvas.Top="204"/>
+            <Rectangle x:Name ="wariant_A" Fill="Green" Width="100" Height="28" Canvas.Left="49" Stroke="Black"  Canvas.Top="392"/>
+            <Rectangle x:Name ="wariant_B" Fill="Yellow" Width="100" Height="28" Canvas.Left="154" Stroke="Black" Canvas.Top="392"/>
+            <Rectangle x:Name ="wariant_C" Fill="Orange" Width="100" Height="28" Canvas.Left="258" Stroke="Black" Canvas.Top="392"/>
+            <Rectangle x:Name ="wariant_D" Fill="Pink"  Width="100" Height="28" Canvas.Left="363" Stroke="Black" Canvas.Top="392"/>
+            <Label Content="Najczesciej wybierane jest:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="545" Canvas.Top="117"/>
+            <Label Content="Z ilością głosów:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="545" Canvas.Top="142"/>
+            <Label x:Name="max_vote_lab" Content="" Canvas.Left="699" Canvas.Top="117"/>
+            <Label x:Name="ilosc_max" Content="" Canvas.Left="646" Canvas.Top="142"/>
+        </Canvas>
+    </Grid>
+</Window>
